@@ -20,12 +20,12 @@ jobs:
         with:
           python-version: '3.11' # Use the latest version of Python 3
 
-      - name: Sync with main repository
+      - name: Sync with master repository
         run: |
           git remote add upstream https://github.com/donnemartin/system-design-primer
           git fetch upstream
-          git checkout main
-          git merge upstream/main
+          git checkout master
+          git merge upstream/master
 
       - name: Install dependencies from requirements.txt
         run: |
