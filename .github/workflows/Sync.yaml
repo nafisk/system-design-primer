@@ -1,0 +1,44 @@
+name: Update and Run Script
+
+on:
+  push:
+  schedule:
+    - cron: '0 0 * * 0' # Runs at midnight UTC every Sunday
+
+jobs:
+  update_and_run_script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Necessary for a complete history for diffs
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11' # Use the latest version of Python 3
+
+      - name: Sync with main repository
+        run: |
+          git remote add upstream https://github.com/donnemartin/system-design-primer
+          git fetch upstream
+          git checkout main
+          git merge upstream/main
+
+      - name: Install dependencies from requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run the update script
+        run: python update.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'Your Name'
+          git config --global user.email 'your.email@example.com'
+          git add .
+          git commit -m "Automated update" || echo "No changes to commit"
+          git push
