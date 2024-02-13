@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 
 # Define the paths for the input markdown file and the output HTML file
-markdown_file_path = Path('./readme.md')
+markdown_file_path = Path('./README.md')
 html_file_path = Path('./index.html')
 
 # Read the markdown file
