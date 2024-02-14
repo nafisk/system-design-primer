@@ -14,6 +14,19 @@
             max-width: 100%;
             height: auto;
         }
+        /* Additional styles for table formatting */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 <body>
@@ -25,7 +38,6 @@
   <br/>
 </p>
 
-<p><br/><br/><br/><hr></p>
 <h2>Motivation</h2>
 <blockquote>
 <p>Learn how to design large-scale systems.</p>
@@ -49,7 +61,6 @@
 <li><a href="#object-oriented-design-interview-questions-with-solutions">Object-oriented design interview questions, <strong>with solutions</strong></a></li>
 <li><a href="#additional-system-design-interview-questions">Additional system design interview questions</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Anki flashcards</h2>
 <p align="center">
   <img src="images/zdCAkB3.png">
@@ -74,7 +85,6 @@
 <ul>
 <li><a href="https://github.com/donnemartin/interactive-coding-challenges/tree/master/anki_cards/Coding.apkg">Coding deck</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Contributing</h2>
 <blockquote>
 <p>Learn from the community.</p>
@@ -88,7 +98,6 @@
 </ul>
 <p>Content that needs some polishing is placed <a href="#under-development">under development</a>.</p>
 <p>Review the <a href="CONTRIBUTING.md">Contributing Guidelines</a>.</p>
-<p><br/><br/><br/><hr></p>
 <h2>Index of system design topics</h2>
 <blockquote>
 <p>Summaries of various system design topics, including pros and cons.  <strong>Everything is a trade-off</strong>.</p>
@@ -216,7 +225,6 @@
 <li><a href="#contact-info">Contact info</a></li>
 <li><a href="#license">License</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Study guide</h2>
 <blockquote>
 <p>Suggested topics to review based on your interview timeline (short, medium, long).</p>
@@ -239,16 +247,60 @@
 <li><strong>Medium timeline</strong> - Aim for <strong>breadth</strong> and <strong>some depth</strong> with system design topics.  Practice by solving <strong>many</strong> interview questions.</li>
 <li><strong>Long timeline</strong> - Aim for <strong>breadth</strong> and <strong>more depth</strong> with system design topics.  Practice by solving <strong>most</strong> interview questions.</li>
 </ul>
-<p>| | Short | Medium | Long |
-|---|---|---|---|
-| Read through the <a href="#index-of-system-design-topics">System design topics</a> to get a broad understanding of how systems work | :+1: | :+1: | :+1: |
-| Read through a few articles in the <a href="#company-engineering-blogs">Company engineering blogs</a> for the companies you are interviewing with | :+1: | :+1: | :+1: |
-| Read through a few <a href="#real-world-architectures">Real world architectures</a> | :+1: | :+1: | :+1: |
-| Review <a href="#how-to-approach-a-system-design-interview-question">How to approach a system design interview question</a> | :+1: | :+1: | :+1: |
-| Work through <a href="#system-design-interview-questions-with-solutions">System design interview questions with solutions</a> | Some | Many | Most |
-| Work through <a href="#object-oriented-design-interview-questions-with-solutions">Object-oriented design interview questions with solutions</a> | Some | Many | Most |
-| Review <a href="#additional-system-design-interview-questions">Additional system design interview questions</a> | Some | Many | Most |</p>
-<p><br/><br/><br/><hr></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Short</th>
+<th>Medium</th>
+<th>Long</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read through the <a href="#index-of-system-design-topics">System design topics</a> to get a broad understanding of how systems work</td>
+<td>:+1:</td>
+<td>:+1:</td>
+<td>:+1:</td>
+</tr>
+<tr>
+<td>Read through a few articles in the <a href="#company-engineering-blogs">Company engineering blogs</a> for the companies you are interviewing with</td>
+<td>:+1:</td>
+<td>:+1:</td>
+<td>:+1:</td>
+</tr>
+<tr>
+<td>Read through a few <a href="#real-world-architectures">Real world architectures</a></td>
+<td>:+1:</td>
+<td>:+1:</td>
+<td>:+1:</td>
+</tr>
+<tr>
+<td>Review <a href="#how-to-approach-a-system-design-interview-question">How to approach a system design interview question</a></td>
+<td>:+1:</td>
+<td>:+1:</td>
+<td>:+1:</td>
+</tr>
+<tr>
+<td>Work through <a href="#system-design-interview-questions-with-solutions">System design interview questions with solutions</a></td>
+<td>Some</td>
+<td>Many</td>
+<td>Most</td>
+</tr>
+<tr>
+<td>Work through <a href="#object-oriented-design-interview-questions-with-solutions">Object-oriented design interview questions with solutions</a></td>
+<td>Some</td>
+<td>Many</td>
+<td>Most</td>
+</tr>
+<tr>
+<td>Review <a href="#additional-system-design-interview-questions">Additional system design interview questions</a></td>
+<td>Some</td>
+<td>Many</td>
+<td>Most</td>
+</tr>
+</tbody>
+</table>
 <h2>How to approach a system design interview question</h2>
 <blockquote>
 <p>How to tackle a system design interview question.</p>
@@ -313,23 +365,57 @@
 <li><a href="https://www.youtube.com/watch?v=ZgdS0EUmn70">Intro to Architecture and Systems Design Interviews</a></li>
 <li><a href="https://leetcode.com/discuss/career/229177/My-System-Design-Template">System design template</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>System design interview questions with solutions</h2>
 <blockquote>
 <p>Common system design interview questions with sample discussions, code, and diagrams.</p>
 <p>Solutions linked to content in the <code>solutions/</code> folder.</p>
 </blockquote>
-<p>| Question | |
-|---|---|
-| Design Pastebin.com (or Bit.ly) | <a href="solutions/system_design/pastebin/README.md">Solution</a> |
-| Design the Twitter timeline and search (or Facebook feed and search) | <a href="solutions/system_design/twitter/README.md">Solution</a> |
-| Design a web crawler | <a href="solutions/system_design/web_crawler/README.md">Solution</a> |
-| Design Mint.com | <a href="solutions/system_design/mint/README.md">Solution</a> |
-| Design the data structures for a social network | <a href="solutions/system_design/social_graph/README.md">Solution</a> |
-| Design a key-value store for a search engine | <a href="solutions/system_design/query_cache/README.md">Solution</a> |
-| Design Amazon's sales ranking by category feature | <a href="solutions/system_design/sales_rank/README.md">Solution</a> |
-| Design a system that scales to millions of users on AWS | <a href="solutions/system_design/scaling_aws/README.md">Solution</a> |
-| Add a system design question | <a href="#contributing">Contribute</a> |</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Design Pastebin.com (or Bit.ly)</td>
+<td><a href="solutions/system_design/pastebin/README.md">Solution</a></td>
+</tr>
+<tr>
+<td>Design the Twitter timeline and search (or Facebook feed and search)</td>
+<td><a href="solutions/system_design/twitter/README.md">Solution</a></td>
+</tr>
+<tr>
+<td>Design a web crawler</td>
+<td><a href="solutions/system_design/web_crawler/README.md">Solution</a></td>
+</tr>
+<tr>
+<td>Design Mint.com</td>
+<td><a href="solutions/system_design/mint/README.md">Solution</a></td>
+</tr>
+<tr>
+<td>Design the data structures for a social network</td>
+<td><a href="solutions/system_design/social_graph/README.md">Solution</a></td>
+</tr>
+<tr>
+<td>Design a key-value store for a search engine</td>
+<td><a href="solutions/system_design/query_cache/README.md">Solution</a></td>
+</tr>
+<tr>
+<td>Design Amazon's sales ranking by category feature</td>
+<td><a href="solutions/system_design/sales_rank/README.md">Solution</a></td>
+</tr>
+<tr>
+<td>Design a system that scales to millions of users on AWS</td>
+<td><a href="solutions/system_design/scaling_aws/README.md">Solution</a></td>
+</tr>
+<tr>
+<td>Add a system design question</td>
+<td><a href="#contributing">Contribute</a></td>
+</tr>
+</tbody>
+</table>
 <h3>Design Pastebin.com (or Bit.ly)</h3>
 <p><a href="solutions/system_design/pastebin/README.md">View exercise and solution</a></p>
 <p><img alt="Imgur" src="images/4edXG0T.png" /></p>
@@ -354,24 +440,54 @@
 <h3>Design a system that scales to millions of users on AWS</h3>
 <p><a href="solutions/system_design/scaling_aws/README.md">View exercise and solution</a></p>
 <p><img alt="Imgur" src="images/jj3A5N8.png" /></p>
-<p><br/><br/><br/><hr></p>
 <h2>Object-oriented design interview questions with solutions</h2>
 <blockquote>
 <p>Common object-oriented design interview questions with sample discussions, code, and diagrams.</p>
 <p>Solutions linked to content in the <code>solutions/</code> folder.</p>
 <p><strong>Note: This section is under development</strong></p>
 </blockquote>
-<p>| Question | |
-|---|---|
-| Design a hash map | <a href="solutions/object_oriented_design/hash_table/hash_map.ipynb">Solution</a>  |
-| Design a least recently used cache | <a href="solutions/object_oriented_design/lru_cache/lru_cache.ipynb">Solution</a>  |
-| Design a call center | <a href="solutions/object_oriented_design/call_center/call_center.ipynb">Solution</a>  |
-| Design a deck of cards | <a href="solutions/object_oriented_design/deck_of_cards/deck_of_cards.ipynb">Solution</a>  |
-| Design a parking lot | <a href="solutions/object_oriented_design/parking_lot/parking_lot.ipynb">Solution</a>  |
-| Design a chat server | <a href="solutions/object_oriented_design/online_chat/online_chat.ipynb">Solution</a>  |
-| Design a circular array | <a href="#contributing">Contribute</a>  |
-| Add an object-oriented design question | <a href="#contributing">Contribute</a> |</p>
-<p><br/><br/><br/><hr></p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Design a hash map</td>
+<td><a href="solutions/object_oriented_design/hash_table/hash_map.ipynb">Solution</a></td>
+</tr>
+<tr>
+<td>Design a least recently used cache</td>
+<td><a href="solutions/object_oriented_design/lru_cache/lru_cache.ipynb">Solution</a></td>
+</tr>
+<tr>
+<td>Design a call center</td>
+<td><a href="solutions/object_oriented_design/call_center/call_center.ipynb">Solution</a></td>
+</tr>
+<tr>
+<td>Design a deck of cards</td>
+<td><a href="solutions/object_oriented_design/deck_of_cards/deck_of_cards.ipynb">Solution</a></td>
+</tr>
+<tr>
+<td>Design a parking lot</td>
+<td><a href="solutions/object_oriented_design/parking_lot/parking_lot.ipynb">Solution</a></td>
+</tr>
+<tr>
+<td>Design a chat server</td>
+<td><a href="solutions/object_oriented_design/online_chat/online_chat.ipynb">Solution</a></td>
+</tr>
+<tr>
+<td>Design a circular array</td>
+<td><a href="#contributing">Contribute</a></td>
+</tr>
+<tr>
+<td>Add an object-oriented design question</td>
+<td><a href="#contributing">Contribute</a></td>
+</tr>
+</tbody>
+</table>
 <h2>System design topics: start here</h2>
 <p>New to system design?</p>
 <p>First, you'll need a basic understanding of common principles, learning about what they are, how they are used, and their pros and cons.</p>
@@ -408,7 +524,6 @@
 </ul>
 <p>Keep in mind that <strong>everything is a trade-off</strong>.</p>
 <p>Then we'll dive into more specific topics such as DNS, CDNs, and load balancers.</p>
-<p><br/><br/><br/><hr></p>
 <h2>Performance vs scalability</h2>
 <p>A service is <strong>scalable</strong> if it results in increased <strong>performance</strong> in a manner proportional to resources added. Generally, increasing performance means serving more units of work, but it can also be to handle larger units of work, such as when datasets grow.<sup><a href=http://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html>1</a></sup></p>
 <p>Another way to look at performance vs scalability:</p>
@@ -421,7 +536,6 @@
 <li><a href="http://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html">A word on scalability</a></li>
 <li><a href="http://www.slideshare.net/jboner/scalability-availability-stability-patterns/">Scalability, availability, stability, patterns</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Latency vs throughput</h2>
 <p><strong>Latency</strong> is the time to perform some action or to produce some result.</p>
 <p><strong>Throughput</strong> is the number of such actions or results per unit of time.</p>
@@ -430,7 +544,6 @@
 <ul>
 <li><a href="https://community.cadence.com/cadence_blogs_8/b/fv/posts/understanding-latency-vs-throughput">Understanding latency vs throughput</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Availability vs consistency</h2>
 <h3>CAP theorem</h3>
 <p align="center">
@@ -458,7 +571,6 @@
 <li><a href="https://github.com/henryr/cap-faq">CAP FAQ</a></li>
 <li><a href="https://www.youtube.com/watch?v=k-Yaq8AHlFA">The CAP theorem</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Consistency patterns</h2>
 <p>With multiple copies of the same data, we are faced with options on how to synchronize them so clients have a consistent view of the data.  Recall the definition of consistency from the <a href="#cap-theorem">CAP theorem</a> - Every read receives the most recent write or an error.</p>
 <h3>Weak consistency</h3>
@@ -474,7 +586,6 @@
 <ul>
 <li><a href="http://snarfed.org/transactions_across_datacenters_io.html">Transactions across data centers</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Availability patterns</h2>
 <p>There are two complementary patterns to support high availability: <strong>fail-over</strong> and <strong>replication</strong>.</p>
 <h3>Fail-over</h3>
@@ -501,19 +612,59 @@
 <h3>Availability in numbers</h3>
 <p>Availability is often quantified by uptime (or downtime) as a percentage of time the service is available.  Availability is generally measured in number of 9s--a service with 99.99% availability is described as having four 9s.</p>
 <h4>99.9% availability - three 9s</h4>
-<p>| Duration            | Acceptable downtime|
-|---------------------|--------------------|
-| Downtime per year   | 8h 45min 57s       |
-| Downtime per month  | 43m 49.7s          |
-| Downtime per week   | 10m 4.8s           |
-| Downtime per day    | 1m 26.4s           |</p>
+<table>
+<thead>
+<tr>
+<th>Duration</th>
+<th>Acceptable downtime</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Downtime per year</td>
+<td>8h 45min 57s</td>
+</tr>
+<tr>
+<td>Downtime per month</td>
+<td>43m 49.7s</td>
+</tr>
+<tr>
+<td>Downtime per week</td>
+<td>10m 4.8s</td>
+</tr>
+<tr>
+<td>Downtime per day</td>
+<td>1m 26.4s</td>
+</tr>
+</tbody>
+</table>
 <h4>99.99% availability - four 9s</h4>
-<p>| Duration            | Acceptable downtime|
-|---------------------|--------------------|
-| Downtime per year   | 52min 35.7s        |
-| Downtime per month  | 4m 23s             |
-| Downtime per week   | 1m 5s              |
-| Downtime per day    | 8.6s               |</p>
+<table>
+<thead>
+<tr>
+<th>Duration</th>
+<th>Acceptable downtime</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Downtime per year</td>
+<td>52min 35.7s</td>
+</tr>
+<tr>
+<td>Downtime per month</td>
+<td>4m 23s</td>
+</tr>
+<tr>
+<td>Downtime per week</td>
+<td>1m 5s</td>
+</tr>
+<tr>
+<td>Downtime per day</td>
+<td>8.6s</td>
+</tr>
+</tbody>
+</table>
 <h4>Availability in parallel vs in sequence</h4>
 <p>If a service consists of multiple components prone to failure, the service's overall availability depends on whether the components are in sequence or in parallel.</p>
 <h6>In sequence</h6>
@@ -524,7 +675,6 @@
 <p>Overall availability increases when two components with availability &lt; 100% are in parallel:</p>
 <p><code>Availability (Total) = 1 - (1 - Availability (Foo)) * (1 - Availability (Bar))</code></p>
 <p>If both <code>Foo</code> and <code>Bar</code> each had 99.9% availability, their total availability in parallel would be 99.9999%.</p>
-<p><br/><br/><br/><hr></p>
 <h2>Domain name system</h2>
 <p align="center">
   <img src="images/IOyLj4i.jpg">
@@ -563,7 +713,6 @@
 <li><a href="https://en.wikipedia.org/wiki/Domain_Name_System">Wikipedia</a></li>
 <li><a href="https://support.dnsimple.com/categories/dns/">DNS articles</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Content delivery network</h2>
 <p align="center">
   <img src="images/h9TAuGI.jpg">
@@ -596,7 +745,6 @@
 <li><a href="http://www.travelblogadvice.com/technical/the-differences-between-push-and-pull-cdns/">The differences between push and pull CDNs</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Content_delivery_network">Wikipedia</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Load balancer</h2>
 <p align="center">
   <img src="images/h81n9iK.png">
@@ -661,7 +809,6 @@
 <li><a href="https://www.nginx.com/resources/glossary/layer-7-load-balancing/">Layer 7 load balancing</a></li>
 <li><a href="http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-listener-config.html">ELB listener config</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Reverse proxy (web server)</h2>
 <p align="center">
   <img src="images/n41Azff.png">
@@ -707,7 +854,6 @@
 <li><a href="http://www.haproxy.org/download/1.2/doc/architecture.txt">HAProxy architecture guide</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Reverse_proxy">Wikipedia</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Application layer</h2>
 <p align="center">
   <img src="images/yB5SYwm.png">
@@ -735,7 +881,6 @@
 <li><a href="http://www.slideshare.net/sauravhaloi/introduction-to-apache-zookeeper">Introduction to Zookeeper</a></li>
 <li><a href="https://cloudncode.wordpress.com/2016/07/22/msa-getting-started/">Here's what you need to know about building microservices</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Database</h2>
 <p align="center">
   <img src="images/Xkm5CXz.png">
@@ -1027,7 +1172,6 @@
 <li><a href="https://www.youtube.com/watch?v=kKjm4ehYiMs">Scaling up to your first 10 million users</a></li>
 <li><a href="https://www.sitepoint.com/sql-vs-nosql-differences/">SQL vs NoSQL differences</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Cache</h2>
 <p align="center">
   <img src="images/Q6z24La.png">
@@ -1185,7 +1329,6 @@ def set_user(user_id, values):
 <li><a href="http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/Strategies.html">AWS ElastiCache strategies</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Cache_(computing)">Wikipedia</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Asynchronism</h2>
 <p align="center">
   <img src="images/54GYsSx.png">
@@ -1220,7 +1363,6 @@ def set_user(user_id, values):
 <li><a href="https://en.wikipedia.org/wiki/Little%27s_law">Little's law</a></li>
 <li><a href="https://www.quora.com/What-is-the-difference-between-a-message-queue-and-a-task-queue-Why-would-a-task-queue-require-a-message-broker-like-RabbitMQ-Redis-Celery-or-IronMQ-to-function">What is the difference between a message queue and a task queue?</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Communication</h2>
 <p align="center">
   <img src="images/5KeocQs.jpg">
@@ -1231,13 +1373,54 @@ def set_user(user_id, values):
 <h3>Hypertext transfer protocol (HTTP)</h3>
 <p>HTTP is a method for encoding and transporting data between a client and a server.  It is a request/response protocol: clients issue requests and servers issue responses with relevant content and completion status info about the request.  HTTP is self-contained, allowing requests and responses to flow through many intermediate routers and servers that perform load balancing, caching, encryption, and compression.</p>
 <p>A basic HTTP request consists of a verb (method) and a resource (endpoint).  Below are common HTTP verbs:</p>
-<p>| Verb | Description | Idempotent* | Safe | Cacheable |
-|---|---|---|---|---|
-| GET | Reads a resource | Yes | Yes | Yes |
-| POST | Creates a resource or trigger a process that handles data | No | No | Yes if response contains freshness info |
-| PUT | Creates or replace a resource | Yes | No | No |
-| PATCH | Partially updates a resource | No | No | Yes if response contains freshness info |
-| DELETE | Deletes a resource | Yes | No | No |</p>
+<table>
+<thead>
+<tr>
+<th>Verb</th>
+<th>Description</th>
+<th>Idempotent*</th>
+<th>Safe</th>
+<th>Cacheable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>Reads a resource</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>Creates a resource or trigger a process that handles data</td>
+<td>No</td>
+<td>No</td>
+<td>Yes if response contains freshness info</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>Creates or replace a resource</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>PATCH</td>
+<td>Partially updates a resource</td>
+<td>No</td>
+<td>No</td>
+<td>Yes if response contains freshness info</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>Deletes a resource</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 <p>*Can be called many times without different outcomes.</p>
 <p>HTTP is an application layer protocol relying on lower-level protocols such as <strong>TCP</strong> and <strong>UDP</strong>.</p>
 <h4>Source(s) and further reading: HTTP</h4>
@@ -1357,15 +1540,52 @@ GET /someresources/anId</p>
 <li>Over time, more fields might be added to an API response and older clients will receive all new data fields, even those that they do not need, as a result, it bloats the payload size and leads to larger latencies.</li>
 </ul>
 <h3>RPC and REST calls comparison</h3>
-<p>| Operation | RPC | REST |
-|---|---|---|
-| Signup    | <strong>POST</strong> /signup | <strong>POST</strong> /persons |
-| Resign    | <strong>POST</strong> /resign<br/>{<br/>"personid": "1234"<br/>} | <strong>DELETE</strong> /persons/1234 |
-| Read a person | <strong>GET</strong> /readPerson?personid=1234 | <strong>GET</strong> /persons/1234 |
-| Read a person’s items list | <strong>GET</strong> /readUsersItemsList?personid=1234 | <strong>GET</strong> /persons/1234/items |
-| Add an item to a person’s items | <strong>POST</strong> /addItemToUsersItemsList<br/>{<br/>"personid": "1234";<br/>"itemid": "456"<br/>} | <strong>POST</strong> /persons/1234/items<br/>{<br/>"itemid": "456"<br/>} |
-| Update an item    | <strong>POST</strong> /modifyItem<br/>{<br/>"itemid": "456";<br/>"key": "value"<br/>} | <strong>PUT</strong> /items/456<br/>{<br/>"key": "value"<br/>} |
-| Delete an item | <strong>POST</strong> /removeItem<br/>{<br/>"itemid": "456"<br/>} | <strong>DELETE</strong> /items/456 |</p>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>RPC</th>
+<th>REST</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Signup</td>
+<td><strong>POST</strong> /signup</td>
+<td><strong>POST</strong> /persons</td>
+</tr>
+<tr>
+<td>Resign</td>
+<td><strong>POST</strong> /resign<br/>{<br/>"personid": "1234"<br/>}</td>
+<td><strong>DELETE</strong> /persons/1234</td>
+</tr>
+<tr>
+<td>Read a person</td>
+<td><strong>GET</strong> /readPerson?personid=1234</td>
+<td><strong>GET</strong> /persons/1234</td>
+</tr>
+<tr>
+<td>Read a person’s items list</td>
+<td><strong>GET</strong> /readUsersItemsList?personid=1234</td>
+<td><strong>GET</strong> /persons/1234/items</td>
+</tr>
+<tr>
+<td>Add an item to a person’s items</td>
+<td><strong>POST</strong> /addItemToUsersItemsList<br/>{<br/>"personid": "1234";<br/>"itemid": "456"<br/>}</td>
+<td><strong>POST</strong> /persons/1234/items<br/>{<br/>"itemid": "456"<br/>}</td>
+</tr>
+<tr>
+<td>Update an item</td>
+<td><strong>POST</strong> /modifyItem<br/>{<br/>"itemid": "456";<br/>"key": "value"<br/>}</td>
+<td><strong>PUT</strong> /items/456<br/>{<br/>"key": "value"<br/>}</td>
+</tr>
+<tr>
+<td>Delete an item</td>
+<td><strong>POST</strong> /removeItem<br/>{<br/>"itemid": "456"<br/>}</td>
+<td><strong>DELETE</strong> /items/456</td>
+</tr>
+</tbody>
+</table>
 <p align="center">
   <i><a href=https://apihandyman.io/do-you-really-know-why-you-prefer-rest-over-rpc/>Source: Do you really know why you prefer REST over RPC</a></i>
 </p>
@@ -1381,7 +1601,6 @@ GET /someresources/anId</p>
 <li><a href="https://code.facebook.com/posts/1468950976659943/">Thrift</a></li>
 <li><a href="http://arstechnica.com/civis/viewtopic.php?t=1190508">Why REST for internal use and not RPC</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Security</h2>
 <p>This section could use some updates.  Consider <a href="#contributing">contributing</a>!</p>
 <p>Security is a broad topic.  Unless you have considerable experience, a security background, or are applying for a position that requires knowledge of security, you probably won't need to know more than the basics:</p>
@@ -1397,7 +1616,6 @@ GET /someresources/anId</p>
 <li><a href="https://github.com/FallibleInc/security-guide-for-developers">Security guide for developers</a></li>
 <li><a href="https://www.owasp.org/index.php/OWASP_Top_Ten_Cheat_Sheet">OWASP top ten</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Appendix</h2>
 <p>You'll sometimes be asked to do 'back-of-the-envelope' estimates.  For example, you might need to determine how long it will take to generate 100 image thumbnails from disk or how much memory a data structure will take.  The <strong>Powers of two table</strong> and <strong>Latency numbers every programmer should know</strong> are handy references.</p>
 <h3>Powers of two table</h3>
@@ -1463,32 +1681,112 @@ Send packet CA-&gt;Netherlands-&gt;CA    150,000,000   ns  150,000 us  150 ms</p
 <blockquote>
 <p>Common system design interview questions, with links to resources on how to solve each.</p>
 </blockquote>
-<p>| Question | Reference(s) |
-|---|---|
-| Design a file sync service like Dropbox | <a href="https://www.youtube.com/watch?v=PE4gwstWhmc">youtube.com</a> |
-| Design a search engine like Google | <a href="http://queue.acm.org/detail.cfm?id=988407">queue.acm.org</a><br/><a href="http://programmers.stackexchange.com/questions/38324/interview-question-how-would-you-implement-google-search">stackexchange.com</a><br/><a href="http://www.ardendertat.com/2012/01/11/implementing-search-engines/">ardendertat.com</a><br/><a href="http://infolab.stanford.edu/~backrub/google.html">stanford.edu</a> |
-| Design a scalable web crawler like Google | <a href="https://www.quora.com/How-can-I-build-a-web-crawler-from-scratch">quora.com</a> |
-| Design Google docs | <a href="https://code.google.com/p/google-mobwrite/">code.google.com</a><br/><a href="https://neil.fraser.name/writing/sync/">neil.fraser.name</a> |
-| Design a key-value store like Redis | <a href="http://www.slideshare.net/dvirsky/introduction-to-redis">slideshare.net</a> |
-| Design a cache system like Memcached | <a href="http://www.slideshare.net/oemebamo/introduction-to-memcached">slideshare.net</a> |
-| Design a recommendation system like Amazon's | <a href="https://web.archive.org/web/20170406065247/http://tech.hulu.com/blog/2011/09/19/recommendation-system.html">hulu.com</a><br/><a href="http://ijcai13.org/files/tutorial_slides/td3.pdf">ijcai13.org</a> |
-| Design a tinyurl system like Bitly | <a href="http://n00tc0d3r.blogspot.com/">n00tc0d3r.blogspot.com</a> |
-| Design a chat app like WhatsApp | <a href="http://highscalability.com/blog/2014/2/26/the-whatsapp-architecture-facebook-bought-for-19-billion.html">highscalability.com</a>
-| Design a picture sharing system like Instagram | <a href="http://highscalability.com/flickr-architecture">highscalability.com</a><br/><a href="http://highscalability.com/blog/2011/12/6/instagram-architecture-14-million-users-terabytes-of-photos.html">highscalability.com</a> |
-| Design the Facebook news feed function | <a href="http://www.quora.com/What-are-best-practices-for-building-something-like-a-News-Feed">quora.com</a><br/><a href="http://www.quora.com/Activity-Streams/What-are-the-scaling-issues-to-keep-in-mind-while-developing-a-social-network-feed">quora.com</a><br/><a href="http://www.slideshare.net/danmckinley/etsy-activity-feeds-architecture">slideshare.net</a> |
-| Design the Facebook timeline function | <a href="https://www.facebook.com/note.php?note_id=10150468255628920">facebook.com</a><br/><a href="http://highscalability.com/blog/2012/1/23/facebook-timeline-brought-to-you-by-the-power-of-denormaliza.html">highscalability.com</a> |
-| Design the Facebook chat function | <a href="http://www.erlang-factory.com/upload/presentations/31/EugeneLetuchy-ErlangatFacebook.pdf">erlang-factory.com</a><br/><a href="https://www.facebook.com/note.php?note_id=14218138919&amp;id=9445547199&amp;index=0">facebook.com</a> |
-| Design a graph search function like Facebook's | <a href="https://www.facebook.com/notes/facebook-engineering/under-the-hood-building-out-the-infrastructure-for-graph-search/10151347573598920">facebook.com</a><br/><a href="https://www.facebook.com/notes/facebook-engineering/under-the-hood-indexing-and-ranking-in-graph-search/10151361720763920">facebook.com</a><br/><a href="https://www.facebook.com/notes/facebook-engineering/under-the-hood-the-natural-language-interface-of-graph-search/10151432733048920">facebook.com</a> |
-| Design a content delivery network like CloudFlare | <a href="https://figshare.com/articles/Globally_distributed_content_delivery/6605972">figshare.com</a> |
-| Design a trending topic system like Twitter's | <a href="http://www.michael-noll.com/blog/2013/01/18/implementing-real-time-trending-topics-in-storm/">michael-noll.com</a><br/><a href="http://snikolov.wordpress.com/2012/11/14/early-detection-of-twitter-trends/">snikolov .wordpress.com</a> |
-| Design a random ID generation system | <a href="https://blog.twitter.com/2010/announcing-snowflake">blog.twitter.com</a><br/><a href="https://github.com/twitter/snowflake/">github.com</a> |
-| Return the top k requests during a time interval | <a href="https://www.cs.ucsb.edu/sites/default/files/documents/2005-23.pdf">cs.ucsb.edu</a><br/><a href="http://davis.wpi.edu/xmdv/docs/EDBT11-diyang.pdf">wpi.edu</a> |
-| Design a system that serves data from multiple data centers | <a href="http://highscalability.com/blog/2009/8/24/how-google-serves-data-from-multiple-datacenters.html">highscalability.com</a> |
-| Design an online multiplayer card game | <a href="https://web.archive.org/web/20180929181117/http://www.indieflashblog.com/how-to-create-an-asynchronous-multiplayer-game.html">indieflashblog.com</a><br/><a href="http://buildnewgames.com/real-time-multiplayer/">buildnewgames.com</a> |
-| Design a garbage collection system | <a href="http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/">stuffwithstuff.com</a><br/><a href="http://courses.cs.washington.edu/courses/csep521/07wi/prj/rick.pdf">washington.edu</a> |
-| Design an API rate limiter | <a href="https://stripe.com/blog/rate-limiters">https://stripe.com/blog/</a> |
-| Design a Stock Exchange (like NASDAQ or Binance) | <a href="https://youtu.be/b1e4t2k2KJY">Jane Street</a><br/><a href="https://around25.com/blog/building-a-trading-engine-for-a-crypto-exchange/">Golang Implementation</a><br/><a href="http://bhomnick.net/building-a-simple-limit-order-in-go/">Go Implementation</a> |
-| Add a system design question | <a href="#contributing">Contribute</a> |</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Reference(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Design a file sync service like Dropbox</td>
+<td><a href="https://www.youtube.com/watch?v=PE4gwstWhmc">youtube.com</a></td>
+</tr>
+<tr>
+<td>Design a search engine like Google</td>
+<td><a href="http://queue.acm.org/detail.cfm?id=988407">queue.acm.org</a><br/><a href="http://programmers.stackexchange.com/questions/38324/interview-question-how-would-you-implement-google-search">stackexchange.com</a><br/><a href="http://www.ardendertat.com/2012/01/11/implementing-search-engines/">ardendertat.com</a><br/><a href="http://infolab.stanford.edu/~backrub/google.html">stanford.edu</a></td>
+</tr>
+<tr>
+<td>Design a scalable web crawler like Google</td>
+<td><a href="https://www.quora.com/How-can-I-build-a-web-crawler-from-scratch">quora.com</a></td>
+</tr>
+<tr>
+<td>Design Google docs</td>
+<td><a href="https://code.google.com/p/google-mobwrite/">code.google.com</a><br/><a href="https://neil.fraser.name/writing/sync/">neil.fraser.name</a></td>
+</tr>
+<tr>
+<td>Design a key-value store like Redis</td>
+<td><a href="http://www.slideshare.net/dvirsky/introduction-to-redis">slideshare.net</a></td>
+</tr>
+<tr>
+<td>Design a cache system like Memcached</td>
+<td><a href="http://www.slideshare.net/oemebamo/introduction-to-memcached">slideshare.net</a></td>
+</tr>
+<tr>
+<td>Design a recommendation system like Amazon's</td>
+<td><a href="https://web.archive.org/web/20170406065247/http://tech.hulu.com/blog/2011/09/19/recommendation-system.html">hulu.com</a><br/><a href="http://ijcai13.org/files/tutorial_slides/td3.pdf">ijcai13.org</a></td>
+</tr>
+<tr>
+<td>Design a tinyurl system like Bitly</td>
+<td><a href="http://n00tc0d3r.blogspot.com/">n00tc0d3r.blogspot.com</a></td>
+</tr>
+<tr>
+<td>Design a chat app like WhatsApp</td>
+<td><a href="http://highscalability.com/blog/2014/2/26/the-whatsapp-architecture-facebook-bought-for-19-billion.html">highscalability.com</a></td>
+</tr>
+<tr>
+<td>Design a picture sharing system like Instagram</td>
+<td><a href="http://highscalability.com/flickr-architecture">highscalability.com</a><br/><a href="http://highscalability.com/blog/2011/12/6/instagram-architecture-14-million-users-terabytes-of-photos.html">highscalability.com</a></td>
+</tr>
+<tr>
+<td>Design the Facebook news feed function</td>
+<td><a href="http://www.quora.com/What-are-best-practices-for-building-something-like-a-News-Feed">quora.com</a><br/><a href="http://www.quora.com/Activity-Streams/What-are-the-scaling-issues-to-keep-in-mind-while-developing-a-social-network-feed">quora.com</a><br/><a href="http://www.slideshare.net/danmckinley/etsy-activity-feeds-architecture">slideshare.net</a></td>
+</tr>
+<tr>
+<td>Design the Facebook timeline function</td>
+<td><a href="https://www.facebook.com/note.php?note_id=10150468255628920">facebook.com</a><br/><a href="http://highscalability.com/blog/2012/1/23/facebook-timeline-brought-to-you-by-the-power-of-denormaliza.html">highscalability.com</a></td>
+</tr>
+<tr>
+<td>Design the Facebook chat function</td>
+<td><a href="http://www.erlang-factory.com/upload/presentations/31/EugeneLetuchy-ErlangatFacebook.pdf">erlang-factory.com</a><br/><a href="https://www.facebook.com/note.php?note_id=14218138919&amp;id=9445547199&amp;index=0">facebook.com</a></td>
+</tr>
+<tr>
+<td>Design a graph search function like Facebook's</td>
+<td><a href="https://www.facebook.com/notes/facebook-engineering/under-the-hood-building-out-the-infrastructure-for-graph-search/10151347573598920">facebook.com</a><br/><a href="https://www.facebook.com/notes/facebook-engineering/under-the-hood-indexing-and-ranking-in-graph-search/10151361720763920">facebook.com</a><br/><a href="https://www.facebook.com/notes/facebook-engineering/under-the-hood-the-natural-language-interface-of-graph-search/10151432733048920">facebook.com</a></td>
+</tr>
+<tr>
+<td>Design a content delivery network like CloudFlare</td>
+<td><a href="https://figshare.com/articles/Globally_distributed_content_delivery/6605972">figshare.com</a></td>
+</tr>
+<tr>
+<td>Design a trending topic system like Twitter's</td>
+<td><a href="http://www.michael-noll.com/blog/2013/01/18/implementing-real-time-trending-topics-in-storm/">michael-noll.com</a><br/><a href="http://snikolov.wordpress.com/2012/11/14/early-detection-of-twitter-trends/">snikolov .wordpress.com</a></td>
+</tr>
+<tr>
+<td>Design a random ID generation system</td>
+<td><a href="https://blog.twitter.com/2010/announcing-snowflake">blog.twitter.com</a><br/><a href="https://github.com/twitter/snowflake/">github.com</a></td>
+</tr>
+<tr>
+<td>Return the top k requests during a time interval</td>
+<td><a href="https://www.cs.ucsb.edu/sites/default/files/documents/2005-23.pdf">cs.ucsb.edu</a><br/><a href="http://davis.wpi.edu/xmdv/docs/EDBT11-diyang.pdf">wpi.edu</a></td>
+</tr>
+<tr>
+<td>Design a system that serves data from multiple data centers</td>
+<td><a href="http://highscalability.com/blog/2009/8/24/how-google-serves-data-from-multiple-datacenters.html">highscalability.com</a></td>
+</tr>
+<tr>
+<td>Design an online multiplayer card game</td>
+<td><a href="https://web.archive.org/web/20180929181117/http://www.indieflashblog.com/how-to-create-an-asynchronous-multiplayer-game.html">indieflashblog.com</a><br/><a href="http://buildnewgames.com/real-time-multiplayer/">buildnewgames.com</a></td>
+</tr>
+<tr>
+<td>Design a garbage collection system</td>
+<td><a href="http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/">stuffwithstuff.com</a><br/><a href="http://courses.cs.washington.edu/courses/csep521/07wi/prj/rick.pdf">washington.edu</a></td>
+</tr>
+<tr>
+<td>Design an API rate limiter</td>
+<td><a href="https://stripe.com/blog/rate-limiters">https://stripe.com/blog/</a></td>
+</tr>
+<tr>
+<td>Design a Stock Exchange (like NASDAQ or Binance)</td>
+<td><a href="https://youtu.be/b1e4t2k2KJY">Jane Street</a><br/><a href="https://around25.com/blog/building-a-trading-engine-for-a-crypto-exchange/">Golang Implementation</a><br/><a href="http://bhomnick.net/building-a-simple-limit-order-in-go/">Go Implementation</a></td>
+</tr>
+<tr>
+<td>Add a system design question</td>
+<td><a href="#contributing">Contribute</a></td>
+</tr>
+</tbody>
+</table>
 <h3>Real world architectures</h3>
 <blockquote>
 <p>Articles on how real world systems are designed.</p>
@@ -1505,55 +1803,225 @@ Send packet CA-&gt;Netherlands-&gt;CA    150,000,000   ns  150,000 us  150 ms</p
 <li>Study what problems are solved by each component, where it works, where it doesn't</li>
 <li>Review the lessons learned</li>
 </ul>
-<p>|Type | System | Reference(s) |
-|---|---|---|
-| Data processing | <strong>MapReduce</strong> - Distributed data processing from Google | <a href="http://static.googleusercontent.com/media/research.google.com/zh-CN/us/archive/mapreduce-osdi04.pdf">research.google.com</a> |
-| Data processing | <strong>Spark</strong> - Distributed data processing from Databricks | <a href="http://www.slideshare.net/AGrishchenko/apache-spark-architecture">slideshare.net</a> |
-| Data processing | <strong>Storm</strong> - Distributed data processing from Twitter | <a href="http://www.slideshare.net/previa/storm-16094009">slideshare.net</a> |
-| | | |
-| Data store | <strong>Bigtable</strong> - Distributed column-oriented database from Google | <a href="http://www.read.seas.harvard.edu/~kohler/class/cs239-w08/chang06bigtable.pdf">harvard.edu</a> |
-| Data store | <strong>HBase</strong> - Open source implementation of Bigtable | <a href="http://www.slideshare.net/alexbaranau/intro-to-hbase">slideshare.net</a> |
-| Data store | <strong>Cassandra</strong> - Distributed column-oriented database from Facebook | <a href="http://www.slideshare.net/planetcassandra/cassandra-introduction-features-30103666">slideshare.net</a>
-| Data store | <strong>DynamoDB</strong> - Document-oriented database from Amazon | <a href="http://www.read.seas.harvard.edu/~kohler/class/cs239-w08/decandia07dynamo.pdf">harvard.edu</a> |
-| Data store | <strong>MongoDB</strong> - Document-oriented database | <a href="http://www.slideshare.net/mdirolf/introduction-to-mongodb">slideshare.net</a> |
-| Data store | <strong>Spanner</strong> - Globally-distributed database from Google | <a href="http://research.google.com/archive/spanner-osdi2012.pdf">research.google.com</a> |
-| Data store | <strong>Memcached</strong> - Distributed memory caching system | <a href="http://www.slideshare.net/oemebamo/introduction-to-memcached">slideshare.net</a> |
-| Data store | <strong>Redis</strong> - Distributed memory caching system with persistence and value types | <a href="http://www.slideshare.net/dvirsky/introduction-to-redis">slideshare.net</a> |
-| | | |
-| File system | <strong>Google File System (GFS)</strong> - Distributed file system | <a href="http://static.googleusercontent.com/media/research.google.com/zh-CN/us/archive/gfs-sosp2003.pdf">research.google.com</a> |
-| File system | <strong>Hadoop File System (HDFS)</strong> - Open source implementation of GFS | <a href="http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html">apache.org</a> |
-| | | |
-| Misc | <strong>Chubby</strong> - Lock service for loosely-coupled distributed systems from Google | <a href="http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/archive/chubby-osdi06.pdf">research.google.com</a> |
-| Misc | <strong>Dapper</strong> - Distributed systems tracing infrastructure | <a href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36356.pdf">research.google.com</a>
-| Misc | <strong>Kafka</strong> - Pub/sub message queue from LinkedIn | <a href="http://www.slideshare.net/mumrah/kafka-talk-tri-hug">slideshare.net</a> |
-| Misc | <strong>Zookeeper</strong> - Centralized infrastructure and services enabling synchronization | <a href="http://www.slideshare.net/sauravhaloi/introduction-to-apache-zookeeper">slideshare.net</a> |
-| | Add an architecture | <a href="#contributing">Contribute</a> |</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>System</th>
+<th>Reference(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data processing</td>
+<td><strong>MapReduce</strong> - Distributed data processing from Google</td>
+<td><a href="http://static.googleusercontent.com/media/research.google.com/zh-CN/us/archive/mapreduce-osdi04.pdf">research.google.com</a></td>
+</tr>
+<tr>
+<td>Data processing</td>
+<td><strong>Spark</strong> - Distributed data processing from Databricks</td>
+<td><a href="http://www.slideshare.net/AGrishchenko/apache-spark-architecture">slideshare.net</a></td>
+</tr>
+<tr>
+<td>Data processing</td>
+<td><strong>Storm</strong> - Distributed data processing from Twitter</td>
+<td><a href="http://www.slideshare.net/previa/storm-16094009">slideshare.net</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Data store</td>
+<td><strong>Bigtable</strong> - Distributed column-oriented database from Google</td>
+<td><a href="http://www.read.seas.harvard.edu/~kohler/class/cs239-w08/chang06bigtable.pdf">harvard.edu</a></td>
+</tr>
+<tr>
+<td>Data store</td>
+<td><strong>HBase</strong> - Open source implementation of Bigtable</td>
+<td><a href="http://www.slideshare.net/alexbaranau/intro-to-hbase">slideshare.net</a></td>
+</tr>
+<tr>
+<td>Data store</td>
+<td><strong>Cassandra</strong> - Distributed column-oriented database from Facebook</td>
+<td><a href="http://www.slideshare.net/planetcassandra/cassandra-introduction-features-30103666">slideshare.net</a></td>
+</tr>
+<tr>
+<td>Data store</td>
+<td><strong>DynamoDB</strong> - Document-oriented database from Amazon</td>
+<td><a href="http://www.read.seas.harvard.edu/~kohler/class/cs239-w08/decandia07dynamo.pdf">harvard.edu</a></td>
+</tr>
+<tr>
+<td>Data store</td>
+<td><strong>MongoDB</strong> - Document-oriented database</td>
+<td><a href="http://www.slideshare.net/mdirolf/introduction-to-mongodb">slideshare.net</a></td>
+</tr>
+<tr>
+<td>Data store</td>
+<td><strong>Spanner</strong> - Globally-distributed database from Google</td>
+<td><a href="http://research.google.com/archive/spanner-osdi2012.pdf">research.google.com</a></td>
+</tr>
+<tr>
+<td>Data store</td>
+<td><strong>Memcached</strong> - Distributed memory caching system</td>
+<td><a href="http://www.slideshare.net/oemebamo/introduction-to-memcached">slideshare.net</a></td>
+</tr>
+<tr>
+<td>Data store</td>
+<td><strong>Redis</strong> - Distributed memory caching system with persistence and value types</td>
+<td><a href="http://www.slideshare.net/dvirsky/introduction-to-redis">slideshare.net</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>File system</td>
+<td><strong>Google File System (GFS)</strong> - Distributed file system</td>
+<td><a href="http://static.googleusercontent.com/media/research.google.com/zh-CN/us/archive/gfs-sosp2003.pdf">research.google.com</a></td>
+</tr>
+<tr>
+<td>File system</td>
+<td><strong>Hadoop File System (HDFS)</strong> - Open source implementation of GFS</td>
+<td><a href="http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsDesign.html">apache.org</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Misc</td>
+<td><strong>Chubby</strong> - Lock service for loosely-coupled distributed systems from Google</td>
+<td><a href="http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/archive/chubby-osdi06.pdf">research.google.com</a></td>
+</tr>
+<tr>
+<td>Misc</td>
+<td><strong>Dapper</strong> - Distributed systems tracing infrastructure</td>
+<td><a href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36356.pdf">research.google.com</a></td>
+</tr>
+<tr>
+<td>Misc</td>
+<td><strong>Kafka</strong> - Pub/sub message queue from LinkedIn</td>
+<td><a href="http://www.slideshare.net/mumrah/kafka-talk-tri-hug">slideshare.net</a></td>
+</tr>
+<tr>
+<td>Misc</td>
+<td><strong>Zookeeper</strong> - Centralized infrastructure and services enabling synchronization</td>
+<td><a href="http://www.slideshare.net/sauravhaloi/introduction-to-apache-zookeeper">slideshare.net</a></td>
+</tr>
+<tr>
+<td></td>
+<td>Add an architecture</td>
+<td><a href="#contributing">Contribute</a></td>
+</tr>
+</tbody>
+</table>
 <h3>Company architectures</h3>
-<p>| Company | Reference(s) |
-|---|---|
-| Amazon | <a href="http://highscalability.com/amazon-architecture">Amazon architecture</a> |
-| Cinchcast | <a href="http://highscalability.com/blog/2012/7/16/cinchcast-architecture-producing-1500-hours-of-audio-every-d.html">Producing 1,500 hours of audio every day</a> |
-| DataSift | <a href="http://highscalability.com/blog/2011/11/29/datasift-architecture-realtime-datamining-at-120000-tweets-p.html">Realtime datamining At 120,000 tweets per second</a> |
-| Dropbox | <a href="https://www.youtube.com/watch?v=PE4gwstWhmc">How we've scaled Dropbox</a> |
-| ESPN | <a href="http://highscalability.com/blog/2013/11/4/espns-architecture-at-scale-operating-at-100000-duh-nuh-nuhs.html">Operating At 100,000 duh nuh nuhs per second</a> |
-| Google | <a href="http://highscalability.com/google-architecture">Google architecture</a> |
-| Instagram | <a href="http://highscalability.com/blog/2011/12/6/instagram-architecture-14-million-users-terabytes-of-photos.html">14 million users, terabytes of photos</a><br/><a href="http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances">What powers Instagram</a> |
-| Justin.tv | <a href="http://highscalability.com/blog/2010/3/16/justintvs-live-video-broadcasting-architecture.html">Justin.Tv's live video broadcasting architecture</a> |
-| Facebook | <a href="https://cs.uwaterloo.ca/~brecht/courses/854-Emerging-2014/readings/key-value/fb-memcached-nsdi-2013.pdf">Scaling memcached at Facebook</a><br/><a href="https://cs.uwaterloo.ca/~brecht/courses/854-Emerging-2014/readings/data-store/tao-facebook-distributed-datastore-atc-2013.pdf">TAO: Facebook’s distributed data store for the social graph</a><br/><a href="https://www.usenix.org/legacy/event/osdi10/tech/full_papers/Beaver.pdf">Facebook’s photo storage</a><br/><a href="http://highscalability.com/blog/2016/6/27/how-facebook-live-streams-to-800000-simultaneous-viewers.html">How Facebook Live Streams To 800,000 Simultaneous Viewers</a> |
-| Flickr | <a href="http://highscalability.com/flickr-architecture">Flickr architecture</a> |
-| Mailbox | <a href="http://highscalability.com/blog/2013/6/18/scaling-mailbox-from-0-to-one-million-users-in-6-weeks-and-1.html">From 0 to one million users in 6 weeks</a> |
-| Netflix | <a href="http://highscalability.com/blog/2015/11/9/a-360-degree-view-of-the-entire-netflix-stack.html">A 360 Degree View Of The Entire Netflix Stack</a><br/><a href="http://highscalability.com/blog/2017/12/11/netflix-what-happens-when-you-press-play.html">Netflix: What Happens When You Press Play?</a> |
-| Pinterest | <a href="http://highscalability.com/blog/2013/4/15/scaling-pinterest-from-0-to-10s-of-billions-of-page-views-a.html">From 0 To 10s of billions of page views a month</a><br/><a href="http://highscalability.com/blog/2012/5/21/pinterest-architecture-update-18-million-visitors-10x-growth.html">18 million visitors, 10x growth, 12 employees</a> |
-| Playfish | <a href="http://highscalability.com/blog/2010/9/21/playfishs-social-gaming-architecture-50-million-monthly-user.html">50 million monthly users and growing</a> |
-| PlentyOfFish | <a href="http://highscalability.com/plentyoffish-architecture">PlentyOfFish architecture</a> |
-| Salesforce | <a href="http://highscalability.com/blog/2013/9/23/salesforce-architecture-how-they-handle-13-billion-transacti.html">How they handle 1.3 billion transactions a day</a> |
-| Stack Overflow | <a href="http://highscalability.com/blog/2009/8/5/stack-overflow-architecture.html">Stack Overflow architecture</a> |
-| TripAdvisor | <a href="http://highscalability.com/blog/2011/6/27/tripadvisor-architecture-40m-visitors-200m-dynamic-page-view.html">40M visitors, 200M dynamic page views, 30TB data</a> |
-| Tumblr | <a href="http://highscalability.com/blog/2012/2/13/tumblr-architecture-15-billion-page-views-a-month-and-harder.html">15 billion page views a month</a> |
-| Twitter | <a href="http://highscalability.com/scaling-twitter-making-twitter-10000-percent-faster">Making Twitter 10000 percent faster</a><br/><a href="http://highscalability.com/blog/2011/12/19/how-twitter-stores-250-million-tweets-a-day-using-mysql.html">Storing 250 million tweets a day using MySQL</a><br/><a href="http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html">150M active users, 300K QPS, a 22 MB/S firehose</a><br/><a href="https://www.infoq.com/presentations/Twitter-Timeline-Scalability">Timelines at scale</a><br/><a href="https://www.youtube.com/watch?v=5cKTP36HVgI">Big and small data at Twitter</a><br/><a href="https://www.youtube.com/watch?v=z8LU0Cj6BOU">Operations at Twitter: scaling beyond 100 million users</a><br/><a href="http://highscalability.com/blog/2016/4/20/how-twitter-handles-3000-images-per-second.html">How Twitter Handles 3,000 Images Per Second</a> |
-| Uber | <a href="http://highscalability.com/blog/2015/9/14/how-uber-scales-their-real-time-market-platform.html">How Uber scales their real-time market platform</a><br/><a href="http://highscalability.com/blog/2016/10/12/lessons-learned-from-scaling-uber-to-2000-engineers-1000-ser.html">Lessons Learned From Scaling Uber To 2000 Engineers, 1000 Services, And 8000 Git Repositories</a> |
-| WhatsApp | <a href="http://highscalability.com/blog/2014/2/26/the-whatsapp-architecture-facebook-bought-for-19-billion.html">The WhatsApp architecture Facebook bought for $19 billion</a> |
-| YouTube | <a href="https://www.youtube.com/watch?v=w5WVu624fY8">YouTube scalability</a><br/><a href="http://highscalability.com/youtube-architecture">YouTube architecture</a> |</p>
+<table>
+<thead>
+<tr>
+<th>Company</th>
+<th>Reference(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amazon</td>
+<td><a href="http://highscalability.com/amazon-architecture">Amazon architecture</a></td>
+</tr>
+<tr>
+<td>Cinchcast</td>
+<td><a href="http://highscalability.com/blog/2012/7/16/cinchcast-architecture-producing-1500-hours-of-audio-every-d.html">Producing 1,500 hours of audio every day</a></td>
+</tr>
+<tr>
+<td>DataSift</td>
+<td><a href="http://highscalability.com/blog/2011/11/29/datasift-architecture-realtime-datamining-at-120000-tweets-p.html">Realtime datamining At 120,000 tweets per second</a></td>
+</tr>
+<tr>
+<td>Dropbox</td>
+<td><a href="https://www.youtube.com/watch?v=PE4gwstWhmc">How we've scaled Dropbox</a></td>
+</tr>
+<tr>
+<td>ESPN</td>
+<td><a href="http://highscalability.com/blog/2013/11/4/espns-architecture-at-scale-operating-at-100000-duh-nuh-nuhs.html">Operating At 100,000 duh nuh nuhs per second</a></td>
+</tr>
+<tr>
+<td>Google</td>
+<td><a href="http://highscalability.com/google-architecture">Google architecture</a></td>
+</tr>
+<tr>
+<td>Instagram</td>
+<td><a href="http://highscalability.com/blog/2011/12/6/instagram-architecture-14-million-users-terabytes-of-photos.html">14 million users, terabytes of photos</a><br/><a href="http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances">What powers Instagram</a></td>
+</tr>
+<tr>
+<td>Justin.tv</td>
+<td><a href="http://highscalability.com/blog/2010/3/16/justintvs-live-video-broadcasting-architecture.html">Justin.Tv's live video broadcasting architecture</a></td>
+</tr>
+<tr>
+<td>Facebook</td>
+<td><a href="https://cs.uwaterloo.ca/~brecht/courses/854-Emerging-2014/readings/key-value/fb-memcached-nsdi-2013.pdf">Scaling memcached at Facebook</a><br/><a href="https://cs.uwaterloo.ca/~brecht/courses/854-Emerging-2014/readings/data-store/tao-facebook-distributed-datastore-atc-2013.pdf">TAO: Facebook’s distributed data store for the social graph</a><br/><a href="https://www.usenix.org/legacy/event/osdi10/tech/full_papers/Beaver.pdf">Facebook’s photo storage</a><br/><a href="http://highscalability.com/blog/2016/6/27/how-facebook-live-streams-to-800000-simultaneous-viewers.html">How Facebook Live Streams To 800,000 Simultaneous Viewers</a></td>
+</tr>
+<tr>
+<td>Flickr</td>
+<td><a href="http://highscalability.com/flickr-architecture">Flickr architecture</a></td>
+</tr>
+<tr>
+<td>Mailbox</td>
+<td><a href="http://highscalability.com/blog/2013/6/18/scaling-mailbox-from-0-to-one-million-users-in-6-weeks-and-1.html">From 0 to one million users in 6 weeks</a></td>
+</tr>
+<tr>
+<td>Netflix</td>
+<td><a href="http://highscalability.com/blog/2015/11/9/a-360-degree-view-of-the-entire-netflix-stack.html">A 360 Degree View Of The Entire Netflix Stack</a><br/><a href="http://highscalability.com/blog/2017/12/11/netflix-what-happens-when-you-press-play.html">Netflix: What Happens When You Press Play?</a></td>
+</tr>
+<tr>
+<td>Pinterest</td>
+<td><a href="http://highscalability.com/blog/2013/4/15/scaling-pinterest-from-0-to-10s-of-billions-of-page-views-a.html">From 0 To 10s of billions of page views a month</a><br/><a href="http://highscalability.com/blog/2012/5/21/pinterest-architecture-update-18-million-visitors-10x-growth.html">18 million visitors, 10x growth, 12 employees</a></td>
+</tr>
+<tr>
+<td>Playfish</td>
+<td><a href="http://highscalability.com/blog/2010/9/21/playfishs-social-gaming-architecture-50-million-monthly-user.html">50 million monthly users and growing</a></td>
+</tr>
+<tr>
+<td>PlentyOfFish</td>
+<td><a href="http://highscalability.com/plentyoffish-architecture">PlentyOfFish architecture</a></td>
+</tr>
+<tr>
+<td>Salesforce</td>
+<td><a href="http://highscalability.com/blog/2013/9/23/salesforce-architecture-how-they-handle-13-billion-transacti.html">How they handle 1.3 billion transactions a day</a></td>
+</tr>
+<tr>
+<td>Stack Overflow</td>
+<td><a href="http://highscalability.com/blog/2009/8/5/stack-overflow-architecture.html">Stack Overflow architecture</a></td>
+</tr>
+<tr>
+<td>TripAdvisor</td>
+<td><a href="http://highscalability.com/blog/2011/6/27/tripadvisor-architecture-40m-visitors-200m-dynamic-page-view.html">40M visitors, 200M dynamic page views, 30TB data</a></td>
+</tr>
+<tr>
+<td>Tumblr</td>
+<td><a href="http://highscalability.com/blog/2012/2/13/tumblr-architecture-15-billion-page-views-a-month-and-harder.html">15 billion page views a month</a></td>
+</tr>
+<tr>
+<td>Twitter</td>
+<td><a href="http://highscalability.com/scaling-twitter-making-twitter-10000-percent-faster">Making Twitter 10000 percent faster</a><br/><a href="http://highscalability.com/blog/2011/12/19/how-twitter-stores-250-million-tweets-a-day-using-mysql.html">Storing 250 million tweets a day using MySQL</a><br/><a href="http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html">150M active users, 300K QPS, a 22 MB/S firehose</a><br/><a href="https://www.infoq.com/presentations/Twitter-Timeline-Scalability">Timelines at scale</a><br/><a href="https://www.youtube.com/watch?v=5cKTP36HVgI">Big and small data at Twitter</a><br/><a href="https://www.youtube.com/watch?v=z8LU0Cj6BOU">Operations at Twitter: scaling beyond 100 million users</a><br/><a href="http://highscalability.com/blog/2016/4/20/how-twitter-handles-3000-images-per-second.html">How Twitter Handles 3,000 Images Per Second</a></td>
+</tr>
+<tr>
+<td>Uber</td>
+<td><a href="http://highscalability.com/blog/2015/9/14/how-uber-scales-their-real-time-market-platform.html">How Uber scales their real-time market platform</a><br/><a href="http://highscalability.com/blog/2016/10/12/lessons-learned-from-scaling-uber-to-2000-engineers-1000-ser.html">Lessons Learned From Scaling Uber To 2000 Engineers, 1000 Services, And 8000 Git Repositories</a></td>
+</tr>
+<tr>
+<td>WhatsApp</td>
+<td><a href="http://highscalability.com/blog/2014/2/26/the-whatsapp-architecture-facebook-bought-for-19-billion.html">The WhatsApp architecture Facebook bought for $19 billion</a></td>
+</tr>
+<tr>
+<td>YouTube</td>
+<td><a href="https://www.youtube.com/watch?v=w5WVu624fY8">YouTube scalability</a><br/><a href="http://highscalability.com/youtube-architecture">YouTube architecture</a></td>
+</tr>
+</tbody>
+</table>
 <h3>Company engineering blogs</h3>
 <blockquote>
 <p>Architectures for companies you are interviewing with.</p>
@@ -1605,7 +2073,6 @@ Send packet CA-&gt;Netherlands-&gt;CA    150,000,000   ns  150,000 us  150 ms</p
 <ul>
 <li><a href="https://github.com/kilimchoi/engineering-blogs">kilimchoi/engineering-blogs</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Under development</h2>
 <p>Interested in adding a section or helping complete one in-progress?  <a href="#contributing">Contribute</a>!</p>
 <ul>
@@ -1614,7 +2081,6 @@ Send packet CA-&gt;Netherlands-&gt;CA    150,000,000   ns  150,000 us  150 ms</p
 <li>Scatter gather</li>
 <li><a href="#contributing">Contribute</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Credits</h2>
 <p>Credits and sources are provided throughout this repo.</p>
 <p>Special thanks to:</p>
@@ -1629,11 +2095,9 @@ Send packet CA-&gt;Netherlands-&gt;CA    150,000,000   ns  150,000 us  150 ms</p
 <li><a href="http://dancres.github.io/Pages/">A distributed systems reading list</a></li>
 <li><a href="http://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview">Cracking the system design interview</a></li>
 </ul>
-<p><br/><br/><br/><hr></p>
 <h2>Contact info</h2>
 <p>Feel free to contact me to discuss any issues, questions, or comments.</p>
 <p>My contact info can be found on my <a href="https://github.com/donnemartin">GitHub page</a>.</p>
-<p><br/><br/><br/><hr></p>
 <h2>License</h2>
 <p><em>I am providing code and resources in this repository to you under an open source license.  Because this is my personal repository, the license you receive to my code and resources is from me and not my employer (Facebook).</em></p>
 <pre><code>Copyright 2017 Donne Martin
